@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>算法 on MIO&#39;S BLOG</title>
+    <link>findmio.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on MIO&#39;S BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 23 May 2022 20:03:58 +0800</lastBuildDate><atom:link href="findmio.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>209. 斐波那契数</title>
+      <link>findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</link>
+      <pubDate>Mon, 23 May 2022 20:03:58 +0800</pubDate>
+      
+      <guid>findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</guid>
+      <description>题目 地址：https://leetcode-cn.com/problems/fibonacci-number/
+解题 斐波那契数列的特点是由后两个数字相加得出下一个数字， 首先能想到的就是用递归来解决。
+递归的出口是
+F(0) = 0，F(1) = 1
+找到出口之后就很简单了，三下五除二就写出来：
+var fib = function (n) { if (n &amp;lt;= 1) { return n; } function add(num) { if (num === 1 || num === 0) { return num; } else { return add(num - 1) + add(num - 2); } } return add(n); }; 愉快的提交之后，
+嚯，击败了 14% 的提交。
+优化 由于盲目的使用递归，造成了大量的重复操作，时间复杂度是 O(2^n)，指数级爆炸。
+自顶而下 为了解决这些重复的操作，使用 memoization 的思想来对已计算的数据进行缓存。
+下面来用 数组 实现一下：</description>
+    </item>
+    
+  </channel>
+</rss>
