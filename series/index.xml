@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on MIO&#39;S BLOG</title>
-    <link>findmio.github.io/series/</link>
+    <link>/series/</link>
     <description>Recent content in Series on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="findmio.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
