@@ -1,0 +1,120 @@
+baseURL: 'findmio.github.io'
+languageCode: 'zh'
+title: "MIO'S BLOG"
+theme: 'PaperMod'
+paginate: 10
+DefaultContentLanguage: 'zh'
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  zh:
+    languageName: 'Chinese Simplified'
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: 归档
+          url: archives
+          weight: 1
+        - name: 搜索
+          url: search/
+          weight: 2
+        - name: 标签
+          url: tags/
+          weight: 3
+        - name: 关于
+          url: about/
+          weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "MIO'S BLOG"
+  author: findmio
+
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: false
+  displayFullLangName: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: false
+  ShowAuthor: false
+
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: '#'
+    imageTitle: my image
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+      - name: Github
+        url: 'https://github.com/findmio/findmio.github.io'
+
+  homeInfoParams:
+    # Title: "I'm mio."
+    Content: >
+      欢迎你来看我的博客
+
+      - 如果有帮到你一点点
+
+      - 给我一个 ✨ 好不好 [Github](https://github.com/findmio/findmio.github.io)
+
+  editPost:
+    URL: 'https://github.com/findmio/findmio.github.io/content'
+    Text: '修改'
+    appendFilePath: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
