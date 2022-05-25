@@ -1,7 +1,4 @@
-/public/*
-!/public/favicon.ico
-!/public/favicon-16x16.png
-!/public/favicon-32x32.png
+/public/
 
 resources
 .hugo_build.lock
