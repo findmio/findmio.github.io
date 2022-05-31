@@ -6,7 +6,17 @@
     <description>Recent content in Posts on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 23 May 2022 20:03:58 +0800</lastBuildDate><atom:link href="https://findmio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 22:16:59 +0800</lastBuildDate><atom:link href="https://findmio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程题：实现一个 LazyMan</title>
+      <link>https://findmio.github.io/post/interview/lazyman/</link>
+      <pubDate>Mon, 30 May 2022 22:16:59 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/interview/lazyman/</guid>
+      <description>题目 实现一个 LazyMan，可以按照以下方式调用:
+LazyMan(&amp;#39;Tony&amp;#39;); // Hi I am Tony  LazyMan(&amp;#39;Tony&amp;#39;).sleep(10).eat(&amp;#39;lunch&amp;#39;); // Hi I am Tony // 等待了10秒... // I am eating lunch  LazyMan(&amp;#39;Tony&amp;#39;).eat(&amp;#39;lunch&amp;#39;).sleep(10).eat(&amp;#39;dinner&amp;#39;); // Hi I am Tony // I am eating lunch // 等待了10秒... // I am eating diner  LazyMan(&amp;#39;Tony&amp;#39;) .eat(&amp;#39;lunch&amp;#39;) .eat(&amp;#39;dinner&amp;#39;) .sleepFirst(5) .sleep(10) .eat(&amp;#39;junk food&amp;#39;); // Hi I am Tony // 等待了5秒... // I am eating lunch // I am eating dinner // 等待了10秒... // I am eating junk food 思路 总共需要实现三个函数：一个同步的 eat，两个异步的 sleep、sleepFirst。</description>
+    </item>
+    
     <item>
       <title>209. 斐波那契数</title>
       <link>https://findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</link>
