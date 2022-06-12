@@ -60,7 +60,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  ShowToc: false
+  ShowToc: true
   ShowAuthor: false
 
   profileMode:
