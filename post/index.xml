@@ -8,11 +8,11 @@
     <language>zh</language>
     <lastBuildDate>Tue, 21 Jun 2022 23:27:41 +0800</lastBuildDate><atom:link href="https://findmio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. 两数之和</title>
-      <link>https://findmio.github.io/post/algorithm/1.-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</link>
+      <title>1_两数之和</title>
+      <link>https://findmio.github.io/post/leetcode/1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</link>
       <pubDate>Tue, 21 Jun 2022 23:27:41 +0800</pubDate>
       
-      <guid>https://findmio.github.io/post/algorithm/1.-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</guid>
+      <guid>https://findmio.github.io/post/leetcode/1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</guid>
       <description>题目 地址：https://leetcode.cn/problems/two-sum/
 思路 通过 Map 把数组的每一项进行缓存 （key 为数组中的项，value 为索引），然后再对数组进行遍历，并计算是否存在 key 相加等于目标值
 遍历数组，判断差值是否存在 Map 中 如果存在，返回对应的索引 如果不存在，将这一项添加到 Map 中 数组遍历结束，返回一个兜底的数组 [-1, -1] /** * @param {number[]} nums * @param {number} target * @return {number[]} */ var twoSum = function (nums, target) { const map = new Map(); for (let i = 0; i &amp;lt; nums.length; i++) { const item = nums[i]; const different = target - item; if (map.get(different) !== undefined) { return [map.</description>
@@ -45,11 +45,11 @@ LazyMan(&amp;#39;Tony&amp;#39;); // Hi I am Tony LazyMan(&amp;#39;Tony&amp;#39;)
     </item>
     
     <item>
-      <title>209. 斐波那契数</title>
-      <link>https://findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</link>
+      <title>209_斐波那契数</title>
+      <link>https://findmio.github.io/post/leetcode/209_%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</link>
       <pubDate>Mon, 23 May 2022 20:03:58 +0800</pubDate>
       
-      <guid>https://findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</guid>
+      <guid>https://findmio.github.io/post/leetcode/209_%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</guid>
       <description>题目 地址：https://leetcode.cn/problems/fibonacci-number/
 解题 斐波那契数列的特点是由后两个数字相加得出下一个数字， 首先能想到的就是用递归来解决。
 递归的出口是
