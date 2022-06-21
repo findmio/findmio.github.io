@@ -13,7 +13,7 @@
       <pubDate>Mon, 23 May 2022 20:03:58 +0800</pubDate>
       
       <guid>https://findmio.github.io/post/algorithm/209.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/</guid>
-      <description>题目 地址：https://leetcode-cn.com/problems/fibonacci-number/
+      <description>题目 地址：https://leetcode.cn/problems/fibonacci-number/
 解题 斐波那契数列的特点是由后两个数字相加得出下一个数字， 首先能想到的就是用递归来解决。
 递归的出口是
 F(0) = 0，F(1) = 1
