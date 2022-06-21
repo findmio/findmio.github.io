@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>算法 on MIO&#39;S BLOG</title>
-    <link>https://findmio.github.io/tags/%E7%AE%97%E6%B3%95/</link>
-    <description>Recent content in 算法 on MIO&#39;S BLOG</description>
+    <title>LeetCode on MIO&#39;S BLOG</title>
+    <link>https://findmio.github.io/tags/leetcode/</link>
+    <description>Recent content in LeetCode on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 21 Jun 2022 23:27:41 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 23:27:41 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. 两数之和</title>
       <link>https://findmio.github.io/post/algorithm/1.-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</link>
