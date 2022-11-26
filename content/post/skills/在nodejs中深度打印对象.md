@@ -5,7 +5,7 @@ draft: false
 tags: ['nodejs', '小技巧']
 ---
 
-```jsx
+```javascript
 const obj = {
   foo: {
     bar: {
@@ -34,7 +34,7 @@ const obj = {
 
 众所周知，此方法是将 `JavaScript` 对象或值转换为 `JSON` 字符串，直接调用的返回值可读性不是很好
 
-```jsx
+```javascript
 console.log(JSON.stringify(obj));
 ```
 
@@ -42,7 +42,7 @@ console.log(JSON.stringify(obj));
 
 可以使用 第三个参数 `space` （缩进用的空白字符串，如果为数字，则代表有多少个空格），来进行美化
 
-```jsx
+```javascript
 console.log(JSON.stringify(obj, null, 2));
 ```
 
@@ -62,7 +62,7 @@ console.log(JSON.stringify(obj, null, 2));
 - `depth`：格式化对象时进行递归的次数，如果要使其无限递归，可传入 `null` 或者 `Infinity`。默认为 `2`
 - `colors`：如果为 `true`，输出带 ANSI 颜色的代码。默认为 `false`
 
-```jsx
+```javascript
 // 需要导入 nodejs 核心模块 util
 console.log(util.inspect(obj, { depth: null, colors: true }));
 console.dir(obj, { depth: null, colors: true });
