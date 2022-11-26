@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>nodejs on MIO&#39;S BLOG</title>
+    <link>https://findmio.github.io/tags/nodejs/</link>
+    <description>Recent content in nodejs on MIO&#39;S BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 25 Nov 2022 10:30:15 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在nodejs中深度打印对象</title>
+      <link>https://findmio.github.io/post/skills/%E5%9C%A8nodejs%E4%B8%AD%E6%B7%B1%E5%BA%A6%E6%89%93%E5%8D%B0%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Fri, 25 Nov 2022 10:30:15 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/skills/%E5%9C%A8nodejs%E4%B8%AD%E6%B7%B1%E5%BA%A6%E6%89%93%E5%8D%B0%E5%AF%B9%E8%B1%A1/</guid>
+      <description>const obj = { foo: { bar: { foo: { bar: &amp;#39;https://findmio.github.io/post/skills/在nodejs中深度打印对象/&amp;#39;, foo: undefined } } } }; 如何在 nodejs 中打印这样一个对象？
+直接使用 console.log 会有什么问题
+{ foo: { bar: { foo: [Object] } } } 对象的嵌套层级超过三层，就会显示为 Object
+那么该如何完整的打印出这个对象呢？
+方法一：JSON.stringify() 众所周知，此方法是将 JavaScript 对象或值转换为 JSON 字符串，直接调用的返回值可读性不是很好
+console.log(JSON.stringify(obj)); 可以使用 第三个参数 space （缩进用的空白字符串，如果为数字，则代表有多少个空格），来进行美化
+console.log(JSON.stringify(obj, null, 2)); 缺点：
+没有对输出结果的值高亮 JSON.stringify() 会对一些属性进行处理，比如忽略掉 undefined 、函数以及 symbol 值 方法二：console.dir() 和 util.inspect 这两个函数的参数是一样的，比较常用的有，查看完整参数
+showHidden ：如果为 true，则格式化结果中会显示隐藏的不可枚举的符号和属性。默认为 false depth：格式化对象时进行递归的次数，如果要使其无限递归，可传入 null 或者 Infinity。默认为 2 colors：如果为 true，输出带 ANSI 颜色的代码。默认为 false // 需要导入 nodejs 核心模块 util console.</description>
+    </item>
+    
+  </channel>
+</rss>
