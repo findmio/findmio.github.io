@@ -1,7 +1,7 @@
 ---
 title: "使用LRU算法优化服务器存储空间"
 date: 2023-01-15T10:30:15+08:00
-draft: true
+draft: false
 tags: ['lru', '算法']
 ---
 
