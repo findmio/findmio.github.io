@@ -6,7 +6,41 @@
     <description>Recent content on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 25 Nov 2022 10:30:15 +0800</lastBuildDate><atom:link href="https://findmio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2023 10:31:14 +0800</lastBuildDate><atom:link href="https://findmio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oa date 是什么</title>
+      <link>https://findmio.github.io/post/skills/oadate/</link>
+      <pubDate>Sat, 06 May 2023 10:31:14 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/skills/oadate/</guid>
+      <description>在使用 js 的库 xlsx 解析 Excel 表格数据的时候，其中一个日期字段，解析之后是 45040.3964930556 这样子，在 Excel 中展示的是 2023/4/24 9:30
+这又是什么奇怪的格式，看起来也不像时间戳啊
+oa date (OLE Automation date) oa date 使用浮点数来保存时间，分为两个部分，整数部分从 1899年12月30日 以来的天数，小数部分是这一天的时间除以24
+js 中的 Date 对象则是从 自 1970年1月1日 起经过的毫秒数
+如何转换 1. 使用 moment.js 库 moment 提供了一个插件 moment-msdate，参考文档
+把 moment 对象转换为 oa date
+moment().toOADate(); // 一个浮点数 把 oa date 转换为 moment 对象
+moment.fromOADate(41493); // Wed Aug 07 2013 00:00:00 GMT-0600 (MDT) 2. 自定义函数 把 Date 对象转换为 oa date
+function JSDateToOADate(date: Date) { return (date.</description>
+    </item>
+    
+    <item>
+      <title>使用LRU算法优化服务器存储空间</title>
+      <link>https://findmio.github.io/post/skills/%E4%BD%BF%E7%94%A8lru%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Sun, 15 Jan 2023 10:30:15 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/skills/%E4%BD%BF%E7%94%A8lru%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4/</guid>
+      <description>为了获取生产环境报错对应的源码位置，之前将打包之后的 map 文件上传到 node 服务，日积月累之下，已经占用了好几个 g 的磁盘空间
+就想到用 LRU 算法 的思想去对这些文件进行管理
+LRU LRU 英文全称是 Least Recently Used，最不经常使用，是一种内存管理算法。可以参考 leetcode 的描述 LRU缓存机制
+核心思想是 “如果数据最近被访问过,那么将来被访问的几率也更高”。所以在容量有限的情况下，淘汰最近最少使用的缓存。即近期内最不会被访问的数据进行淘汰
+可以使用一个队列来缓存数据
+如果有新数据插入，就移出队列中最后一个缓存
+如果有数据访问，要将访问到的数据移到尾部，重新进行排序
+实现 在 javascript 中，可以使用 Map 或者 Set 来模拟一个队列
+import path from &amp;#34;path&amp;#34;; import fse from &amp;#34;fs-extra&amp;#34;; /** 上传 sourcemap 存放地址 */ export const sourcemapFilePath = path.join(__dirname, &amp;#34;../../../../uploads&amp;#34;); // 使用 LRU 算法去控制 sourcemap 文件 export class SourcemapCache { private path = path.join(__dirname, &amp;#34;cache.json&amp;#34;); private length: number; // 最大缓存数量 private cache: Set&amp;lt;string&amp;gt;; constructor(length = 10) { this.</description>
+    </item>
+    
     <item>
       <title>在nodejs中深度打印对象</title>
       <link>https://findmio.github.io/post/skills/%E5%9C%A8nodejs%E4%B8%AD%E6%B7%B1%E5%BA%A6%E6%89%93%E5%8D%B0%E5%AF%B9%E8%B1%A1/</link>

@@ -6,7 +6,24 @@
     <description>Recent content in 算法 on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 21 Jun 2022 23:27:41 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 10:30:15 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用LRU算法优化服务器存储空间</title>
+      <link>https://findmio.github.io/post/skills/%E4%BD%BF%E7%94%A8lru%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Sun, 15 Jan 2023 10:30:15 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/skills/%E4%BD%BF%E7%94%A8lru%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4/</guid>
+      <description>为了获取生产环境报错对应的源码位置，之前将打包之后的 map 文件上传到 node 服务，日积月累之下，已经占用了好几个 g 的磁盘空间
+就想到用 LRU 算法 的思想去对这些文件进行管理
+LRU LRU 英文全称是 Least Recently Used，最不经常使用，是一种内存管理算法。可以参考 leetcode 的描述 LRU缓存机制
+核心思想是 “如果数据最近被访问过,那么将来被访问的几率也更高”。所以在容量有限的情况下，淘汰最近最少使用的缓存。即近期内最不会被访问的数据进行淘汰
+可以使用一个队列来缓存数据
+如果有新数据插入，就移出队列中最后一个缓存
+如果有数据访问，要将访问到的数据移到尾部，重新进行排序
+实现 在 javascript 中，可以使用 Map 或者 Set 来模拟一个队列
+import path from &amp;#34;path&amp;#34;; import fse from &amp;#34;fs-extra&amp;#34;; /** 上传 sourcemap 存放地址 */ export const sourcemapFilePath = path.join(__dirname, &amp;#34;../../../../uploads&amp;#34;); // 使用 LRU 算法去控制 sourcemap 文件 export class SourcemapCache { private path = path.join(__dirname, &amp;#34;cache.json&amp;#34;); private length: number; // 最大缓存数量 private cache: Set&amp;lt;string&amp;gt;; constructor(length = 10) { this.</description>
+    </item>
+    
     <item>
       <title>1_两数之和</title>
       <link>https://findmio.github.io/post/leetcode/1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</link>
