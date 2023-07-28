@@ -6,7 +6,22 @@
     <description>Recent content in Posts on MIO&#39;S BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 06 May 2023 10:31:14 +0800</lastBuildDate><atom:link href="https://findmio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 20:20:51 +0800</lastBuildDate><atom:link href="https://findmio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在centos中安装chrome</title>
+      <link>https://findmio.github.io/post/linux/%E5%9C%A8centos%E4%B8%AD%E5%AE%89%E8%A3%85chrome/</link>
+      <pubDate>Thu, 27 Jul 2023 20:20:51 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/linux/%E5%9C%A8centos%E4%B8%AD%E5%AE%89%E8%A3%85chrome/</guid>
+      <description>安装 chrome 1, 使用 wget 命令下载最新的 Chrome 64 位 rpm 软件包
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 2, 安装 rpm 包
+sudo dnf localinstall google-chrome-stable_current_x86_64.rpm 安装 microsoft edge 1, 下载并导入 microsoft 的 GPG 公钥
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc 2, 添加程序安装源
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge 3, 修正安装源的文件名称
+sudo mv /etc/yum.repos.d/packages.microsoft.com_yumrepos_edge.repo /etc/yum.repos.d/microsoft-edge-stable.repo 4, 安装
+sudo dnf install microsoft-edge-stable 更新 chrome sudo dnf update google-chrome-stable 卸载 chrome sudo dnf remove google-chrome-stable 可能遇到的问题 打开浏览器失败 由于我是在没有图形界面的系统上运行 chrome，系统缺少 X 服务器 需要在启动 chrome 时，添加参数 --no-sandbox</description>
+    </item>
+    
     <item>
       <title>oa date 是什么</title>
       <link>https://findmio.github.io/post/skills/oadate/</link>
