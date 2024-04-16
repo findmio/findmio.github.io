@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>阿里云 on MIO&#39;S BLOG</title>
+    <link>https://findmio.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+    <description>Recent content in 阿里云 on MIO&#39;S BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 15 Apr 2024 19:21:55 +0800</lastBuildDate><atom:link href="https://findmio.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoX.js 获取手机截图上传至 OSS</title>
+      <link>https://findmio.github.io/post/rpa/autox.js-%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE%E4%B8%8A%E4%BC%A0%E8%87%B3-oss/</link>
+      <pubDate>Mon, 15 Apr 2024 19:21:55 +0800</pubDate>
+      
+      <guid>https://findmio.github.io/post/rpa/autox.js-%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE%E4%B8%8A%E4%BC%A0%E8%87%B3-oss/</guid>
+      <description>前言 AutoX.js 使用的是 Rhino 作为 JavaScript 引擎，并不支持完整的 nodejs 模块，所以没法直接调用 nodejs 下的 OSS 包。
+下面展示使用 OSS Android SDK 完成上传的过程
+准备工作 前往 OSS Android SDK，下载依赖包
+将 aar 格式的 SDK 转换为 dex
+这里使用 Android Studio 提供的工具 d8，进入到 Android Studio 安装目录下，d8 一般在 build-tools 下，MacOS 下为 ~/Library/Android/sdk/build-tools/{version}/
+./d8 --release --output output_folder oss-android-sdk-2.9.13.aar 会生成一个 classes.dex 的文件
+拷贝 classes.dex 到手机 截图 // 安卓版本高于 Android 9，需要手动确认授权 if (device.sdkInt &amp;gt; 28) { // 等待截屏权限申请并同意 threads.start(function () { // 这里的系统提示框可能不是运行，改成对应文本即可 packageName(&amp;#34;com.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://findmio.github.io/tags/autox.js/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/post/rpa/autox.js-%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE%E4%B8%8A%E4%BC%A0%E8%87%B3-oss/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/post/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/tags/rpa/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/tags/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
+    <loc>https://findmio.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    <lastmod>2024-04-15T19:21:55+08:00</lastmod>
+  </url><url>
     <loc>https://findmio.github.io/tags/centos/</loc>
     <lastmod>2023-07-27T20:20:51+08:00</lastmod>
   </url><url>
     <loc>https://findmio.github.io/tags/chrome/</loc>
-    <lastmod>2023-07-27T20:20:51+08:00</lastmod>
-  </url><url>
-    <loc>https://findmio.github.io/</loc>
-    <lastmod>2023-07-27T20:20:51+08:00</lastmod>
-  </url><url>
-    <loc>https://findmio.github.io/post/</loc>
-    <lastmod>2023-07-27T20:20:51+08:00</lastmod>
-  </url><url>
-    <loc>https://findmio.github.io/tags/</loc>
     <lastmod>2023-07-27T20:20:51+08:00</lastmod>
   </url><url>
     <loc>https://findmio.github.io/post/linux/%E5%9C%A8centos%E4%B8%AD%E5%AE%89%E8%A3%85chrome/</loc>
